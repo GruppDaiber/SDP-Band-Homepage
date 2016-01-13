@@ -1,0 +1,102 @@
+<!doctype html>
+	<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		
+		
+	<title>SDP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/styles_songs.css">
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="../js/jquery.timelinr-0.9.54.js"></script>
+		<script src="script.js"></script>
+		<script>
+			$(function(){
+				$().timelinr({
+					arrowKeys: 'true'
+				})
+			});
+		</script>
+		
+	</head>
+		
+	<body class="page-index">
+		<div id="background"></div>
+		<header>
+			<a id="logo">
+			</a>
+				<nav id="mainNav">
+					<ul>
+					  <li><a href="../index.html">News</a></li>
+					  <li><a id="current">Songs</a></li>
+					  <li><a href="uebersdp.html">Über SDP</a></li>
+					  <li><a href="tours.html">Tourdaten</a></li>					  
+					  <li><a href="http://www.amazon.de/SDP/e/B00FS7NB24/ref=ep_artist_tab_glance" target="_blank">Shop</a></li>
+					  </ul>
+					</ul>
+				</nav>
+
+			<a id="socialBtn" class="btn icon-share">Social Media</a>
+				<div class="social">
+				    <a href="mailto:info@goldenegg-gc.de" target="_blank" id="newsletter" title="Kontakt">Kontakt</a>
+					<a href="https://www.facebook.com/sdpmusik/" target="_blank" id="facebook" title="Facebook">SDP Facebook</a>
+					<a href="https://twitter.com/sdp_die_band" target="_blank" id="twitter" title="Twitter">SDP Twitter</a>
+					<a href="https://instagram.com/sdp_die_band/" target="_blank" id="instagram" title="Instagram">SDP Instagram</a>
+					<a href="https://www.youtube.com/user/stonedeafproduction" target="_blank" id="youtube" title="Youtube">SDP Youtube</a>
+				</div>
+			
+		</header>
+		
+		<!-- Songtimeline -->
+        <div id="wrapper">
+			    <div id="timeline">
+			<ul id="dates">
+				<li><a href="#ich_will_nur_das_du_weißt"></a></li>
+				<li><a href="#deine_freundin"></a></li>
+				<li><a href="#mittelfinger"></a></li>
+				<li><a href="#ne_leiche"></a></li>
+			</ul>
+			<ul id="issues">
+				<li id="ich_will_nur_das_du_weißt">
+                    <h1>Ich will nur dass...</h1>
+					<img src="../images/Cover/ich_will_nur_das_du.jpg" width="256" height="256" />
+                        <audio id="audio_with_controls" controls>
+                                <source src="../media/deine_freundin.mp3" type="audio/mp3" />
+                                Ihr Browser kennt das HTML5-audio-Element noch nicht.
+                        </audio>
+				</li>
+				<li id="deine_freundin">
+                    <h1>Deine Freundin</h1>
+					<img src="../images/Cover/freundin.jpg" width="256" height="256" />
+					    <audio id="audio_with_controls" controls>
+                                <source src="../media/deine_freundin.mp3" type="audio/mp3" />
+                                Ihr Browser kennt das HTML5-audio-Element noch nicht.
+                        </audio>
+				</li>
+				<li id="mittelfinger">
+                    <h1>Mittelfinger</h1>
+					<img src="../images/Cover/bunte_republik.jpg" width="256" height="256" />
+					    <audio id="audio_with_controls" controls>
+                                <source src="../media/deine_freundin.mp3" type="audio/mp3" />
+                                Ihr Browser kennt das HTML5-audio-Element noch nicht.
+                        </audio>
+				</li>
+				<li id="ne_leiche">
+                    <h1>Ne Leiche feat. Sido</h1>
+					<img src="../images/Cover/neleiche.jpg" width="256" height="256" />
+					    <audio id="audio_with_controls" controls>
+                                <source src="../media/deine_freundin.mp3" type="audio/mp3" />
+                                Ihr Browser kennt das HTML5-audio-Element noch nicht.
+                        </audio>
+				</li>
+            </ul>
+			<div id="grad_left"></div>
+			<div id="grad_right"></div>
+			<a href="#" id="next">+</a>
+			<a href="#" id="prev">-</a>
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,259 @@
+    /* Default link styling */
+    a:link { color:#fff; }
+    a:visited { color:#fff; }
+    a:hover { color:#d93806; }
+    a:active { color:#d93806; }
+	a{ text-decoration: none; color: #000;}
+	li a#current { color:#d93806;}
+    
+    
+    
+/* ---------------------------------------------------------
+   Author's styles
+   ---------------------------------------------------------*/
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	
+	body {
+		width: 100%;
+	}
+	
+	header {
+		background-color: #000;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		min-width:330px;
+		width: 100%;
+	}
+	
+	#mainNav {
+		position: absolute;
+		left: 330px;		
+	}
+	
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+	}
+
+	li {
+		float: left;
+		font-size: 24px;
+		font-family: Verdana;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 48px 24px;
+		text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+		background-color: #000;
+	}
+
+	.active {
+    background-color: #4CAF50;
+	}
+	#logo {
+		display: block;
+		float: left;
+		left: 20px;
+		height: 130px;
+		width: 280px;
+		background-image: url("../images/logo.png");
+		background-repeat: no-repeat;
+		background-size: 280px 130px;
+		/*background-position: center center;*/
+		font-size: 0;
+		position: relative;
+		z-index: 19;
+	}
+
+	/* Social Btn */
+	
+	@font-face {
+	  font-family: 'fontello';
+	  src: url('../font/fontello.eot?79586572');
+	  src: url('../font/fontello.eot?79586572#iefix') format('embedded-opentype'),
+		   url('../font/fontello.woff?79586572') format('woff'),
+		   url('../font/fontello.ttf?79586572') format('truetype'),
+		   url('../font/fontello.svg?79586572#fontello') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+	/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+	/*
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	  @font-face {
+		font-family: 'fontello';
+		src: url('../font/fontello.svg?79586572#fontello') format('svg');
+	  }
+	}
+	*/
+
+	.icon-twitter:before { content: '\e801'; } /* 'î ' */
+	.icon-facebook:before { content: '\e802'; } /* 'î ‚' */
+	.icon-instagramm:before { content: '\e804'; } /* 'î „' */
+	.icon-youtube:before { content: '\e805'; } /* 'î …' */
+	.icon-newsletter:before { content: '\e816'; } /* 'î –' */
+	
+	header .social {
+	margin-right: 20px;
+	display: none;
+	position: fixed;
+	left: 1200px;
+	top: 5px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 4;
+	padding-top: 100px;
+
+	background: #000000;	
+	}
+
+	header .social a {
+		display: inline-block;
+		width: 75px;
+		height: 75px;
+		margin-right: 20px;
+		line-height: 75px;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	header .social a:before {
+		font-family: 'fontello';
+		font-size: 32px;
+		font-weight: 400;
+		display: block;
+		color: #fff;
+		transition: all .6s;
+	}
+
+	header .social #newsletter:before { content: '\e808'; }
+	header .social #facebook:before { content: '\e805'; }
+	header .social #instagram:before { content: '\e804'; }
+	header .social #twitter:before { content: '\e801'; }
+	header .social #youtube:before { content: '\e800';}
+
+	header .social #newsletter:hover:before { color: #92f18a;; }
+	header .social #facebook:hover:before { color: #31497d; }
+	header .social #hearthis:hover:before { color: #e62117; }
+	header .social #instagram:hover:before { color: #517fa4; }
+	header .social #twitter:hover:before { color: #56a3d9; }
+	header .social #youtube:hover:before { color: #e62117; }
+
+	#socialBtn:before { 
+		display: block;
+		font-size: 30px;
+		content: '\e806'; 
+	}
+
+	@media only screen and (min-width: 1660px){
+
+		header .social {
+			margin-left: 0px;
+			margin-right: 60px;
+			display: block!important;
+			position: relative;
+			top: 0;
+			right: 0px;
+			width: auto;
+			height: 56px;
+			text-align: left;
+			z-index: 10;
+			padding-top: 0px;
+			background: transparent;	
+		}
+		
+		header .social a {
+			width: 60px;
+			line-height: 115px;
+		}
+
+		#socialBtn {
+			display: none;
+		}
+	}
+	
+	#wrapper {
+		background-image: url("../images/backgrounds/index.jpg");
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 0;
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	/*
+	footer {
+		background-color: #000;
+		font-family: Verdana;
+	}
+	*/
+	#vincentbild {
+		position: absolute;
+        width: 30%;
+        height: auto;
+        top: 10%;
+	}
+	#vincentbild img {
+        width: 100%;
+        height: auto;
+	}
+	
+	#dagbild {
+		position: absolute;
+		left: 18%;
+        width: 29%;
+        height: auto;
+        top: 12%;
+	}
+
+	#dagbild img {
+        width: 100%;
+        height: auto;
+	}
+	
+	#twitterfeed{
+		position: absolute;
+		top: 14%;
+		left: 58%;
+		width: 100%;
+		height: 100%;
+        
+	}
+	
+	#instagramfeed {
+		position: absolute;
+		left: 58%;
+        width: 30%; 
+        height: 40%;
+        top: 45.5%;
+        
+	}
+
+	#instagramfeed iframe{
+		position: absolute;
+        width: 100%; 
+        height: 100%;
+
+}

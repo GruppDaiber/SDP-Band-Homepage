@@ -1,0 +1,363 @@
+
+
+    /* Default link styling */
+    a:link { color:#fff; }
+    a:visited { color:#fff; }
+    a:hover { color:#d93806; }
+    a:active { color:#d93806; }
+	a{ text-decoration: none; color: #000;}
+	li a#current { color:#d93806;}
+
+	header {
+		background-color: #000;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		min-width:330px;
+		width: 100%;
+	}
+	
+	#mainNav {
+		position: absolute;
+		left: 330px;		
+	}
+	
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+	}
+
+	li {
+		float: left;
+		font-size: 24px;
+		font-family: Verdana;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 48px 24px;
+		text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+		background-color: #000;
+	}
+
+	.active {
+    background-color: #4CAF50;
+	}
+	#logo {
+		display: block;
+		float: left;
+		left: 20px;
+		height: 130px;
+		width: 280px;
+		background-image: url("../images/logo.png");
+		background-repeat: no-repeat;
+		background-size: 280px 130px;
+		/*background-position: center center;*/
+		font-size: 0;
+		position: relative;
+		z-index: 19;
+	}
+
+	/* Social Btn */
+	
+	@font-face {
+	  font-family: 'fontello';
+	  src: url('../font/fontello.eot?79586572');
+	  src: url('../font/fontello.eot?79586572#iefix') format('embedded-opentype'),
+		   url('../font/fontello.woff?79586572') format('woff'),
+		   url('../font/fontello.ttf?79586572') format('truetype'),
+		   url('../font/fontello.svg?79586572#fontello') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+	/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+	/*
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	  @font-face {
+		font-family: 'fontello';
+		src: url('../font/fontello.svg?79586572#fontello') format('svg');
+	  }
+	}
+	*/
+
+	.icon-twitter:before { content: '\e801'; } /* 'î ' */
+	.icon-facebook:before { content: '\e802'; } /* 'î ‚' */
+	.icon-instagramm:before { content: '\e804'; } /* 'î „' */
+	.icon-youtube:before { content: '\e805'; } /* 'î …' */
+	.icon-newsletter:before { content: '\e816'; } /* 'î –' */
+	
+	header .social {
+	margin-right: 20px;
+	display: none;
+	position: fixed;
+	left: 1200px;
+	top: 5px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 4;
+	padding-top: 100px;
+
+	background: #000000;	
+	}
+
+	header .social a {
+		display: inline-block;
+		width: 75px;
+		height: 75px;
+		margin-right: 20px;
+		line-height: 75px;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	header .social a:before {
+		font-family: 'fontello';
+		font-size: 32px;
+		font-weight: 400;
+		display: block;
+		color: #fff;
+		transition: all .6s;
+	}
+
+	header .social #newsletter:before { content: '\e808'; }
+	header .social #facebook:before { content: '\e805'; }
+	header .social #instagram:before { content: '\e804'; }
+	header .social #twitter:before { content: '\e801'; }
+	header .social #youtube:before { content: '\e800';}
+
+	header .social #newsletter:hover:before { color: #92f18a;; }
+	header .social #facebook:hover:before { color: #31497d; }
+	header .social #hearthis:hover:before { color: #e62117; }
+	header .social #instagram:hover:before { color: #517fa4; }
+	header .social #twitter:hover:before { color: #56a3d9; }
+	header .social #youtube:hover:before { color: #e62117; }
+
+	#socialBtn:before { 
+		display: block;
+		font-size: 30px;
+		content: '\e806'; 
+	}
+
+		header .social {
+			margin-left: 0px;
+			margin-right: 60px;
+			display: block!important;
+			position: relative;
+			top: 0;
+			right: 0px;
+			width: auto;
+			height: 56px;
+			text-align: left;
+			z-index: 10;
+			padding-top: 0px;
+			background: transparent;	
+		}
+		
+		header .social a {
+			width: 60px;
+			line-height: 115px;
+		}
+
+		#socialBtn {
+			display: none;
+		}
+	
+
+	#wrapper {
+		background-image: url("../images/backgrounds/index.jpg");
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 0;
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Myriad Pro, sans-serif;
+	color: #fff;
+	font-size: 14px;
+}
+
+div.background {
+    color: #fff;
+    width: 800;
+    height: 800;
+    display: block;
+}
+
+ul.here{
+	margin: 0px auto 40px auto;
+} 
+	
+ p.logo {
+	text-align: center;
+	margin: 3px 0px 0px 0px;
+}
+
+h1,h2,h4,h5,h6 {
+	text-align: center;
+	color: #ccc;
+	text-shadow: #000 1px 1px 2px;
+	margin-bottom: 5px;
+}
+	h1 {
+		font-size: 40px;
+		margin: 40px 0px 0px 0px;
+	}
+	h2 {
+		font-size: 30px;
+		margin: 40px 0px 20px 0px;
+		color: #d93806;
+	}
+.sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+	#timeline {
+		height: 500px;
+		overflow: hidden;
+		background-color: #000;
+		margin: 50px auto;
+		position: relative;
+		top: 200px;
+	}
+		#dates {
+			width: 800px;
+			height: 60px;
+			overflow: hidden;
+			position: relative;
+			top: 200px;
+		}
+			#dates li {
+				list-style: none;
+				float: left;
+				width: 100px;
+				height: 50px;
+				font-size: 24px;
+				text-align: center;
+			}
+				#dates a {
+					line-height: 38px;
+					padding-bottom: 10px;
+				}
+		
+		#issues {
+			width: 700px;
+			height: 550px;
+			overflow: hidden;
+            
+		}	
+			#issues li {
+				width: 700px;
+				height: 550px;
+				list-style: none;
+                float: left;
+			}
+				#issues li.selected img {
+					-webkit-transform: scale(1.1,1.1);
+					-moz-transform: scale(1.1,1.1);
+				    -o-transform: scale(1.1,1.1);
+				    -ms-transform: scale(1.1,1.1);
+				    transform: scale(1.1,1.1);
+				}
+				#issues li img {
+					margin: 20px 70px 20px 200px;
+					background: transparent;
+					/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+					/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+					zoom: 1;
+					-webkit-transition: all 2s ease-in-out;
+					-moz-transition: all 2s ease-in-out;
+					-o-transition: all 2s ease-in-out;
+					-ms-transition: all 2s ease-in-out; 
+					transition: all 2s ease-in-out;
+					-webkit-transform: scale(0.7,0.7);
+					-moz-transform: scale(0.7,0.7);
+				    -o-transform: scale(0.7,0.7);
+				    -ms-transform: scale(0.7,0.7);
+				    transform: scale(0.7,0.7); 
+				}
+				#issues li h1 {
+					color: #d93806;
+					font-size: 34px;
+					margin: 0px 0px 10px 0px;
+					text-shadow: #000 0px 0px 0px;
+                    background: #fff;
+				}
+
+                #issues li audio {
+                    margin: 0px 50px 00px 170px;
+                    
+                }
+
+				}
+				#issues li p {
+					font-size: 14px;
+					margin-right: 70px;
+					font-weight: normal;
+					line-height: 22px;
+					text-shadow: #000 1px 1px 2px;
+				}
+		
+		#grad_left,
+		#grad_right {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: 170px;
+		}
+		
+		#next,
+		#prev {
+			position: absolute;
+			top: 0;
+			font-size: 70px;
+			top: 170px;
+			width: 100px;
+			height: 100px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				/*background-position: 0 -76px;*/
+			}
+			#next {
+				right: 0;
+				background-image: url('../images/btn_rechts.png');
+			}
+			#prev {
+				left: 0;
+				background-image: url('../images/btn_links.png');
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
